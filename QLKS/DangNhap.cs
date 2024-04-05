@@ -50,6 +50,7 @@ namespace QLKS
                 MessageBox.Show("Đăng nhập không thành công");
             }
         }
+        // Code nút kết nối
 
         private void button2_Click(object sender, EventArgs e)
         {
