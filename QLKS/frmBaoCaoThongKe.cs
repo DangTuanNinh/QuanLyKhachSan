@@ -16,7 +16,7 @@ namespace QLKS
             InitializeComponent();
         }
         KetNoi kn = new KetNoi();
-
+        // lớp kết nối
         public void getData()
         {
             string query = " select * from ThongKe";
@@ -32,7 +32,7 @@ namespace QLKS
             string query = "UPDATE ThongKe SET DoanhThu = (SELECT SUM(ThanhTien) FROM HoaDon,ThongKe), NgayThongKe = GETDATE()";
 
             // Thực hiện truy vấn cập nhật
-            kn.ThucThi(query);   
+            kn.ThucThi(query);
         }
 
         public void ExportFile(DataTable dataTable, string sheetName, string title)
