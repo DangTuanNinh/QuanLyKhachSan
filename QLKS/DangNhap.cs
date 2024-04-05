@@ -56,5 +56,6 @@ namespace QLKS
         {
             Application.Exit();
         }
+        // Nút thoát
     }
 }
