@@ -15,7 +15,7 @@ namespace QLKS
         {
             InitializeComponent();
         }
-
+        // khởi tạo form Đăng nhập
         KetNoi kn = new KetNoi();
 
         private void button1_Click(object sender, EventArgs e)
