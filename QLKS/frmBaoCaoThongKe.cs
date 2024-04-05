@@ -23,7 +23,7 @@ namespace QLKS
             DataSet ds = kn.LayDuLieu(query);
             dgvThongKe.DataSource = ds.Tables[0];
         }
-        // Lấy dữ liệu thống kê
+        // Lấy dữ liệu thống kê 
 
 
         public void UpdateTotalRevenueInThongKe()
@@ -32,13 +32,12 @@ namespace QLKS
             string query = "UPDATE ThongKe SET DoanhThu = (SELECT SUM(ThanhTien) FROM HoaDon,ThongKe), NgayThongKe = GETDATE()";
 
             // Thực hiện truy vấn cập nhật
-            kn.ThucThi(query);
+            kn.ThucThi(query);   
         }
 
         public void ExportFile(DataTable dataTable, string sheetName, string title)
         {
             //Tạo các đối tượng Excel
-
             Microsoft.Office.Interop.Excel.Application oExcel = new Microsoft.Office.Interop.Excel.Application();
 
             Microsoft.Office.Interop.Excel.Workbooks oBooks;
