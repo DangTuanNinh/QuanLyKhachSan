@@ -23,7 +23,7 @@ namespace QLKS
             DataSet ds = kn.LayDuLieu(query);
             dgvThongKe.DataSource = ds.Tables[0];
         }
-        // Lấy dữ liệu thống kê
+        // Lấy dữ liệu thống kê 
 
 
         public void UpdateTotalRevenueInThongKe()
