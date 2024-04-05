@@ -28,7 +28,7 @@ namespace QLKS
 
         public void UpdateTotalRevenueInThongKe()
         {
-            //
+            // 
             string query = "UPDATE ThongKe SET DoanhThu = (SELECT SUM(ThanhTien) FROM HoaDon,ThongKe), NgayThongKe = GETDATE()";
 
             // Thực hiện truy vấn cập nhật
