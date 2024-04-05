@@ -16,7 +16,7 @@ namespace QLKS
             InitializeComponent();
         }
         KetNoi kn = new KetNoi();
-        // lớp kết nối abcdeaegs
+        // lớp kết nối abcdeaegsf
         public void getData()
         {
             string query = " select * from ThongKe";
