@@ -22,7 +22,7 @@ namespace QLKS
         {
             string query = string.Format(
                 "select * from NguoiDung where TaiKhoan = '{0}' and MatKhau ='{1}'",
-                txtTaiKhoan.Text,
+                 txtTaiKhoan.Text,
                 txtMatKhau.Text
             );
             DataSet ds = kn.LayDuLieu(query);
